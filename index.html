@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <title>TOKU TEAM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap" rel="stylesheet"> 
+    <style>
+      html {
+        font-family: 'Red Hat Mono', monospace;
+        background: linear-gradient(10deg, #3f3837, #37393f);
+        color: #ffffff;
+        min-height: 100%;
+      }
+
+      body {
+        position: relative;
+        display: block;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      .title {
+        display: inline-block;
+        margin: 0;
+        padding: 40px 10vw 4vw;
+        font-size: 10vw;
+        line-height: 20vw;
+      }
+
+      .logoA {
+        height: 20vw;
+        max-height: 297px;
+        vertical-align: bottom;
+        padding-right: 5vw;
+      }
+
+      .logoB {
+        height: 20vw;
+        max-height: 297px;
+        vertical-align: bottom;
+      }
+
+      main {
+        display: flex;
+        margin: 0 10vw;
+        flex-direction: row;
+        padding-bottom: 50px;
+      }
+
+      .description {
+        font-size: 5rem;
+      }
+
+      .menu {
+        flex: 0 0 auto;
+        padding-left: 50px;
+      }
+
+      a {
+        color: #63A4F9;
+        text-decoration: none;
+        transition: color ease-in-out 0.15s;
+      }
+
+      a:hover {
+        color: #4c7cbb;
+      }
+
+      @media all and (max-width: 698px) {
+
+        main {
+          flex-direction: column;
+        }
+
+        .description {
+          font-size: 3rem;
+        }
+      }
+
+      @keyframes slide {
+        from {transform: rotateZ(5deg) translateX(-150%)}
+        to {transform: rotateZ(5deg) translateX(150%)}
+      }
+
+      .background {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -100;
+      }
+
+      .background div {
+        flex: 1 1 auto;
+        margin: 20px;
+        background: rgba(255,255,255,0.1);
+        animation: slide linear 120s infinite forwards;
+        border-radius: 1000px;
+      }
+
+      .background .a { animation-delay: -10s;  animation-duration: 120s; }
+      .background .b { animation-delay: -50s; animation-duration: 112s; }
+      .background .c { animation-delay: -30s; animation-duration: 124s; }
+      .background .d { animation-delay: -20s; animation-duration: 94s; }
+      .background .e { animation-delay: -40s; animation-duration: 118s; }
+      .background .f { animation-delay: -80s; animation-duration: 144s; }
+      .background .g { animation-delay: -60s; animation-duration: 130s; }
+      .background .h { animation-delay: -106s; animation-duration: 106s; }
+
+    </style>
+  </head>
+  <body>
+    <h1 class="title"><img class="logoA" src="./Toku-Hiragana.svg"><img class="logoB" src="./TOKU_DRAFT.png"></h1>
+    <main>
+      <div class="description">
+        <p>BRINGING SIMPLICITY TO NFT CREATION</p>
+        <p><a href="mailto:info@toku.team">GET IN CONTACT</a></p>
+      </div>
+    </main>
+
+    <div class="background">
+      <div class="a"></div>
+      <div class="b"></div>
+      <div class="c"></div>
+      <div class="d"></div>
+      <div class="e"></div>
+      <div class="f"></div>
+      <div class="g"></div>
+      <div class="h"></div>
+      <div class="i"></div>
+      <div class="j"></div>
+    </div>
+  </body>
+</html>
